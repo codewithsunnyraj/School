@@ -1,38 +1,53 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCreative, Pagination } from "swiper/modules";
-import { Autoplay } from "swiper/modules";
+import { EffectCreative, Pagination, Autoplay } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/effect-creative";
 import "swiper/css/pagination";
+
 const Carousel = ({ images }) => {
   return (
-    <div>
+    <div className="relative">
       <Swiper
         modules={[EffectCreative, Pagination, Autoplay]}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        effect="creative"
-        speed={500}
+        autoplay={{ delay: 3500, disableOnInteraction: false }}
+        loop={true}
         grabCursor={true}
+        speed={800}
+        effect="creative"
         creativeEffect={{
-          prev: { shadow: true, translate: ["-200%", 0, -200] },
-          next: { translate: ["200%", 0, -200] },
+          prev: {
+            shadow: true,
+            translate: ["-180%", 0, -300],
+            rotate: [0, -15, 0], // slight rotate for prev slide
+            scale: 0.9, // smaller prev slide
+          },
+          next: {
+            translate: ["180%", 0, -300],
+            rotate: [0, 15, 0], // slight rotate for next slide
+            scale: 0.9, // smaller next slide
+          },
         }}
         pagination={{ clickable: true }}
-        loop={true} // autoplay only works if loop is true
         className="mySwiper"
       >
         {images.map((img, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-64 lg:h-120">
+            <div className="relative w-full h-64 lg:h-120 overflow-hidden ">
               <img
                 src={img.src}
                 alt={img.title}
-                className="w-full h-full object-cover "
+                className="w-full h-full object-cover transform transition-transform duration-700 hover:scale-105"
               />
-              <div className="absolute bottom-6 left-6 text-white">
-                <h2 className="text-2xl font-bold">{img.title}</h2>
-                <p className="mt-1 text-lg">{img.desc}</p>
+              {/* Text overlay with fade-in animation */}
+              <div className="absolute bottom-6 left-6 text-black space-y-1">
+                <h2 className="text-2xl lg:text-4xl font-bold  animate-fadeIn">
+                  {img.title}
+                </h2>
+                <p className="text-lg lg:text-xl animate-fadeIn delay-200">
+                  {img.desc}
+                </p>
               </div>
             </div>
           </SwiperSlide>
