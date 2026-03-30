@@ -51,9 +51,10 @@ const Header = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
+      className="sticky top-0 z-50"
     >
       <Topbar />
-      <div className="lg:bg-white border py-3 container mx-auto md:px-6 lg:px-10">
+      <div className="lg:bg-white border py-3  container mx-auto md:px-6 lg:px-10">
         <div className="lg:flex justify-between items-center">
           <div className="flex px-4 py-2 lg:py-0 md:px-0 justify-between items-center">
             <div>
@@ -111,7 +112,10 @@ const Header = () => {
                   </motion.li>
                 </motion.ul>
 
-                <motion.div variants={itemVariants} className="lg:mx-6 w-full my-6 lg:my-0">
+                <motion.div
+                  variants={itemVariants}
+                  className="lg:mx-6 w-full my-6 lg:my-0"
+                >
                   <Link
                     to="/login"
                     className="bg-black duration-300 hover:bg-white ease-in-out border border-dashed block text-center lg:inline text-lg w-full border-black hover:text-black text-white py-3 px-12 rounded-full"
