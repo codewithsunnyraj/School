@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Carousel from "../components/Carousel";
+import { slider } from "../constant/constant";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      <Carousel images={slider} />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
