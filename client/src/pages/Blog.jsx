@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Image_slider from "../components/Image_slider";
+import { facilities_data } from "../constant/constant";
 
 const Blog = () => {
   return (
-    <div>Blog</div>
-  )
-}
+    <div>
+      <Image_slider type="Facility" data={facilities_data} />
+    </div>
+  );
+};
 
-export default Blog
+export default Blog;
