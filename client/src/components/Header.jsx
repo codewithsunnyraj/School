@@ -54,7 +54,7 @@ const Header = () => {
       className="sticky top-0 z-50"
     >
       <Topbar />
-      <div className="lg:bg-white border py-3  md:px-6 lg:px-10">
+      <div className="bg-white border py-3  md:px-6 lg:px-10">
         <div className="lg:flex justify-between items-center">
           <div className="flex px-4 py-2 lg:py-0 md:px-0 justify-between items-center">
             <div>

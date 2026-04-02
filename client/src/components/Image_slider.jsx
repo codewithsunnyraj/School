@@ -86,7 +86,7 @@ const Image_slider = ({
                       />
                     </div>
                     <div className="w-[80%]">
-                      <h3 className="mb-4 text-2xl font-bold text-yellow-400">
+                      <h3 className="mb-4 text-2xl lg:text-3xl font-bold text-yellow-400">
                         {items.name}
                       </h3>
                       {items.rating.map((Icon, index) => (
@@ -97,7 +97,7 @@ const Image_slider = ({
                           <Icon />
                         </div>
                       ))}
-                      <p className="text-justify text-white">
+                      <p className="text-justify text-xl mt-5 text-white">
                         {items.feedback}
                       </p>
                     </div>
@@ -149,7 +149,7 @@ const Image_slider = ({
             {type === "Facility" && (
               <div
                 key={index}
-                className="bg-white lg:max-w-105  custom-shadow border border-dashed border-slate-500 rounded-3xl md:p-3 p-2 lg:p-5"
+                className="bg-white my-4 lg:max-w-105  custom-shadow border border-dashed border-slate-500 rounded-3xl md:p-3 p-2 lg:p-5"
               >
                 <div>
                   <div className=" relative rounded-3xl">

@@ -18,6 +18,7 @@ import fac_2 from "../assets/Home/facility_2.jpg";
 import fac_3 from "../assets/Home/facility_3.jpg";
 import fac_4 from "../assets/Home/facility_4.jpg";
 import feed from "../assets/Home/feedback.jpg";
+import bg_bread1 from "../assets/breadcrumb_bg.jpg";
 import { FaBusSimple } from "react-icons/fa6";
 import { SiGoogleclassroom } from "react-icons/si";
 import { IoSchoolSharp, IoFastFood } from "react-icons/io5";
@@ -27,6 +28,7 @@ export const assets = {
   logo,
   feed,
   kids_bg,
+  bg_bread1,
   g1,
   g2,
   g3,

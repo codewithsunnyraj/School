@@ -23,3 +23,16 @@ body {
 .custom-shadow:hover {
   box-shadow: 6px 6px 3px rgb(230, 173, 17);
 }
+
+.bg-footer_img {
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.582)),
+    url("../src/assets/banner/banner_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.underline-line {
+  height: 2px;
+}

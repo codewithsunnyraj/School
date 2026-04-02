@@ -10,10 +10,13 @@ import Grade from "../components/Grade";
 import News from "../components/News";
 import Facilities from "../components/Facilities";
 import Feedbacks from "../components/Feedbacks";
+import Announcement from "../components/Announcement";
+import About from "../components/About";
 const Home = () => {
   return (
     <div>
       <Carousel images={slider} />
+      <About subtitle="" heading="About Us" />
       <Why_choose_us />
       <div className="my-4 md:my-10 lg:my-16 container mx-auto px-4 md:px-10">
         <Heading subtitle="School Gallery" title="Our Gallery For Kids" />
@@ -45,6 +48,12 @@ const Home = () => {
       </div>
       <div className="container mx-auto px-6 md:px-8 lg:px-16 my-6 md:my-10 lg:my-28">
         <News />
+        <div className="my-6 md:my-12 lg:my-24">
+          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold border-b pb-3 border-red-600">
+            Annoucement
+          </h2>
+          <Announcement />
+        </div>
       </div>
     </div>
   );

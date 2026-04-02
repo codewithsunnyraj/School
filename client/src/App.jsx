@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import Admission from "./pages/Admission";
 import Blog from "./pages/Blog";
 import Register from "./pages/Register";
+import Gallery from "./pages/Gallery";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route element={<About_us />} path="/about" />
           <Route element={<Event />} path="/event" />
           <Route element={<Contact />} path="/contact" />
+          <Route element={<Gallery />} path="/gallery" />
           <Route element={<Team />} path="/team" />
           <Route element={<Blog />} path="/blog" />
           <Route element={<Admission />} path="/admission" />
