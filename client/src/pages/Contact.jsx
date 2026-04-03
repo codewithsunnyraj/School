@@ -16,7 +16,11 @@ const Contact = () => {
       <div className="md:mx-8  mx-3">
         <div className="grid mt-8 md:mt-14 md:grid-cols-2 gap-4">
           <div className="px-2 md:px-6">
-            <img src={assets.feed} className="w-full" alt="" />
+            <img
+              src={assets.feed}
+              className="w-full rounded-r-3xl shadow-lg"
+              alt=""
+            />
           </div>
           <div className="flex items-center w-full">
             <div className="border w-full p-2 md:p-6 rounded-t-lg rounded-bl-lg">

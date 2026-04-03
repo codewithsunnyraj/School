@@ -56,17 +56,20 @@ const Footer = () => {
                   <p className="underline-line w-20 bg-yellow-500 rounded-full"></p>
                 </div>
                 <ul className="">
-                  <Link to="/">
+                  <Link to="/" className="text-hover-apply duration-300">
                     <li>Home</li>
                   </Link>
-                  <Link to="/about" className="my-1 inline-block">
+                  <Link to="/about" className="my-1 text-hover-apply duration-300 inline-block">
                     <li>About Us</li>
                   </Link>
-                  <Link to="/event">
+                  <Link to="/event" className="text-hover-apply duration-300">
                     <li>Our Event</li>
                   </Link>
-                  <Link to="/contact" className="my-1 inline-block">
+                  <Link to="/contact" className="my-1 text-hover-apply duration-300 inline-block">
                     <li>Contact Us</li>
+                  </Link>
+                  <Link to="/contact" className="my-1 text-hover-apply duration-300">
+                    <li>Director Message</li>
                   </Link>
                 </ul>
               </div>

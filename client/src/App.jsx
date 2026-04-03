@@ -12,6 +12,8 @@ import Admission from "./pages/Admission";
 import Blog from "./pages/Blog";
 import Register from "./pages/Register";
 import Gallery from "./pages/Gallery";
+import Parent_login from "./pages/Parent_login";
+import Forget_password from "./pages/Forget_password";
 
 const App = () => {
   return (
@@ -28,7 +30,9 @@ const App = () => {
           <Route element={<Blog />} path="/blog" />
           <Route element={<Admission />} path="/admission" />
           <Route element={<Register />} path="/register" />
+          <Route element={<Parent_login />} path="/parent_login" />
           <Route element={<Login />} path="/login" />
+          <Route element={<Forget_password />} path="/forget_password" />
         </Routes>
         <Footer />
       </BrowserRouter>

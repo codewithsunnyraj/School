@@ -23,13 +23,18 @@ import { FaBusSimple } from "react-icons/fa6";
 import { SiGoogleclassroom } from "react-icons/si";
 import { IoSchoolSharp, IoFastFood } from "react-icons/io5";
 import { FaStar, FaStarHalf } from "react-icons/fa";
-
+import login_school from "../assets/Login/login.jpg";
+import forget from "../assets/common/forget.webp";
+import parent_login from "../assets/common/parent_login.jpg";
 export const assets = {
   logo,
   feed,
   kids_bg,
   bg_bread1,
+  parent_login,
+  login_school,
   g1,
+  forget,
   g2,
   g3,
   g4,

@@ -1,26 +1,31 @@
 import React from "react";
-import Breadcrumb from "../components/Breadcrumb";
-import { assets } from "../constant/constant";
 import { Link } from "react-router-dom";
+import { assets } from "../constant/constant";
+import Breadcrumb from "../components/Breadcrumb";
 
-const Login = () => {
+const Parent_login = () => {
   return (
     <div>
       <Breadcrumb
         bg_img={assets.bg_bread1}
         desc="Empowering India with Quality Computer Education Since 2007"
-        heading="Login Now"
+        heading="Parent Login"
       />
       <div className="md:mx-16 my-6 md:my-16 mx-3 ">
         <div className="grid md:grid-cols-2 gap-4">
+          <div>
+            <div className="w-full flex justify-center items-center">
+              <img src={assets.parent_login} className="w-120" alt="" />
+            </div>
+          </div>
           <div className="">
             <form
               action="javascript:void(0)"
               method="post"
-              className="border border-red-800 rounded-r-3xl p-3 md:p-8"
+              className="border border-red-800 rounded-l-3xl p-3 md:p-8"
             >
               <div>
-                <h3 className="text-3xl font-bold">Login Here</h3>
+                <h3 className="text-3xl font-bold">Parent Login</h3>
                 <p className="py-4">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Facilis mollitia illum perspiciatis nisi expedita in deserunt
@@ -53,15 +58,10 @@ const Login = () => {
                 </button>
               </div>
               <div className="flex justify-between mt-4 md:mt-8">
-                <Link to="/parent_login">Parent Login</Link>
+                <Link to="/login">Login</Link>
                 <Link to="/forget_password">Forgot Password</Link>
               </div>
             </form>
-          </div>
-          <div>
-            <div className="w-full flex justify-center items-center">
-              <img src={assets.login_school} className="w-120" alt="" />
-            </div>
           </div>
         </div>
       </div>
@@ -69,4 +69,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Parent_login;
