@@ -9,7 +9,7 @@ const Feedbacks = () => {
         <div>
           <img src={assets.feed} className="w-full" alt="" />
         </div>
-        <div className="bg-slate-900  p-3 w-full md:p-8 ">
+        <div className="bg-slate-900 min-h-120 p-3 w-full md:p-8 ">
           <div>
             <div className="text-white ">
               <h5 className="text-slate-300 mt-5">feedback</h5>
@@ -19,7 +19,7 @@ const Feedbacks = () => {
               </h3>
             </div>
             <div>
-              <Image_slider type="feedbacks" slider_view={1} data={feedbacks} />
+              <Image_slider type="feedbacks" data={feedbacks} />
             </div>
           </div>
         </div>

@@ -40,7 +40,6 @@ const Home = () => {
       </div>
       <div className="">
         <Grade />
-
         <Facilities />
       </div>
       <div>

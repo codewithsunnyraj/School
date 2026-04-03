@@ -19,7 +19,7 @@ const Image_slider = ({
   layout = "",
   type = "card",
 }) => {
-  // console.log("team_view", data);
+  console.log("team_view", slider_view);
   return (
     <div className={layout}>
       <Swiper
@@ -75,18 +75,18 @@ const Image_slider = ({
             )}
 
             {type === "feedbacks" && (
-              <div className="py-10 px-8 lg:block hidden">
+              <div className="py-10 px-8">
                 <div>
                   <div className="text-white flex gap-2" key={index}>
-                    <div className="lg:w-[20%]">
+                    <div className="w-1/4 md:w-1/5">
                       <img
                         src={items.img}
                         className="rounded-full h-28 w-28"
                         alt=""
                       />
                     </div>
-                    <div className="lg:w-[80%]">
-                      <h3 className="mb-4 text-2xl lg:text-3xl font-bold text-yellow-400">
+                    <div className="w-3/4 md:w-4/5">
+                      <h3 className="mb-4 text-2xl md:text-3xl font-bold text-yellow-400">
                         {items.name}
                       </h3>
                       {items.rating.map((Icon, index) => (
