@@ -25,12 +25,14 @@ import { IoSchoolSharp, IoFastFood } from "react-icons/io5";
 import { FaStar, FaStarHalf } from "react-icons/fa";
 import login_school from "../assets/Login/login.jpg";
 import forget from "../assets/common/forget.webp";
+import about from "../assets/common/about.webp";
 import parent_login from "../assets/common/parent_login.jpg";
 import bb from "../assets/common/bb.jpg";
 export const assets = {
   logo,
   feed,
   kids_bg,
+  about,
   bg_bread1,
   bb,
   parent_login,

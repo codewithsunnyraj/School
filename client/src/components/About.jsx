@@ -1,12 +1,13 @@
 import React from "react";
 // import Image_slider from "./Image_slider";
 import { CiLocationArrow1 } from "react-icons/ci";
+import { assets } from "../constant/constant";
 
 const About = ({ subtitle, heading }) => {
   return (
     <div>
       <div className=" py-8 md:py-16  px-6 md:px-16">
-        <div className="lg:grid xl:grid-cols-2 gap-6">
+        <div className="lg:grid lg:grid-cols-[70%_30%] gap-6">
           <div>
             <div>
               <h6 className="text-red-500">{subtitle}</h6>
@@ -37,14 +38,9 @@ const About = ({ subtitle, heading }) => {
               </div>
             </div>
           </div>
-          <div className="lg:grid lg:grid-cols-2 gap-4">
+          <div className="">
             <div>
-              {/* <Image_slider
-                data={property_list}
-                type="image_slider"
-                slider_view={1}
-                // layout=""
-              /> */}
+              <img src={assets.about} className="h-96" alt="" />
             </div>
           </div>
         </div>

@@ -75,17 +75,17 @@ const Image_slider = ({
             )}
 
             {type === "feedbacks" && (
-              <div className="py-10 px-8 ">
+              <div className="py-10 px-8 lg:block hidden">
                 <div>
                   <div className="text-white flex gap-2" key={index}>
-                    <div className="w-[20%]">
+                    <div className="lg:w-[20%]">
                       <img
                         src={items.img}
                         className="rounded-full h-28 w-28"
                         alt=""
                       />
                     </div>
-                    <div className="w-[80%]">
+                    <div className="lg:w-[80%]">
                       <h3 className="mb-4 text-2xl lg:text-3xl font-bold text-yellow-400">
                         {items.name}
                       </h3>

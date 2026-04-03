@@ -5,13 +5,11 @@ import Image_slider from "./Image_slider";
 const Feedbacks = () => {
   return (
     <div className="">
-      <div className="grid md:grid-cols-2">
+      <div className="grid lg:grid-cols-2">
         <div>
-          <div>
-            <img src={assets.feed} className="w-full" alt="" />
-          </div>
+          <img src={assets.feed} className="w-full" alt="" />
         </div>
-        <div className="bg-slate-900  p-3 md:p-8 relative">
+        <div className="bg-slate-900  p-3 w-full md:p-8 ">
           <div>
             <div className="text-white ">
               <h5 className="text-slate-300 mt-5">feedback</h5>
