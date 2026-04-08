@@ -27,9 +27,7 @@ const Parent_login = () => {
               <div>
                 <h3 className="text-3xl font-bold">Parent Login</h3>
                 <p className="py-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facilis mollitia illum perspiciatis nisi expedita in deserunt
-                  rerum maxime qui aut nam laudantium molestias.
+                 Access your child’s academic progress, attendance, and important updates by logging in with your registered credentials.
                 </p>
               </div>
               <div>

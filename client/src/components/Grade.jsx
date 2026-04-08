@@ -6,7 +6,7 @@ import { grade_level } from "../constant/constant";
 const Grade = () => {
   return (
     <div className="bg-grade py-6 px-4 md:px-6 lg:px-10 md:py-10 lg:py-24">
-      <div className="grid lg:grid-cols-2">
+      <div className="grid grid-cols-1  w-full md:grid-cols-2 xl:grid-cols-2">
         <div>
           <Heading
             title="Grade Program"
@@ -19,8 +19,8 @@ const Grade = () => {
             </p>
           </div>
         </div>
-        <div className="">
-          <Image_slider data={grade_level} type="grade" />
+        <div className="w-full">
+          <Image_slider data={grade_level} slider_view={3} type="grade" />
         </div>
       </div>
     </div>

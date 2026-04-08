@@ -43,32 +43,33 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="name">Full Name</label> <br />
+                  <label htmlFor="mobile">Mobile No.</label> <br />
                   <input
                     type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter Full Name"
+                    id="mobile"
+                    name="mobile"
+                    maxLength={10}
+                    placeholder="Enter Mobile No"
                     className="focus:outline-none w-full border px-2 focus:border-amber-400 py-2"
                   />
                 </div>
                 <div>
-                  <label htmlFor="name">Full Name</label> <br />
+                  <label htmlFor="email">Email Id</label> <br />
                   <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter Full Name"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter EmailId"
                     className="focus:outline-none w-full border px-2 focus:border-amber-400 py-2"
                   />
                 </div>
                 <div>
-                  <label htmlFor="name">Full Name</label> <br />
+                  <label htmlFor="subject">Subject</label> <br />
                   <input
                     type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter Full Name"
+                    id="subject"
+                    name="subject"
+                    placeholder="Enter Subject Here"
                     className="focus:outline-none w-full border px-2 focus:border-amber-400 py-2"
                   />
                 </div>
@@ -78,6 +79,7 @@ const Contact = () => {
                 <textarea
                   name="message"
                   id="message"
+                  placeholder="Enter Message"
                   className="border w-full px-2 py-2 focus-within:outline-none focus:border-yellow-500"
                   rows={5}
                 ></textarea>

@@ -5,7 +5,7 @@ import Image_slider from "./Image_slider";
 const Feedbacks = () => {
   return (
     <div className="">
-      <div className="grid lg:grid-cols-2">
+      <div className="grid grid-cols-1  xl:grid-cols-2">
         <div>
           <img src={assets.feed} className="w-full" alt="" />
         </div>
@@ -18,8 +18,8 @@ const Feedbacks = () => {
                 school
               </h3>
             </div>
-            <div>
-              <Image_slider type="feedbacks" data={feedbacks} />
+            <div className="w-full">
+              <Image_slider type="feedbacks" slider_view={1} data={feedbacks} />
             </div>
           </div>
         </div>

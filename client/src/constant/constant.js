@@ -48,14 +48,14 @@ export const slider = [
   {
     id: 1,
     src: slider_1,
-    title: "12",
-    desc: "fghfhh",
+    title: "Fun with Reading",
+    desc: "Our engaging storytelling sessions and reading activities help children build strong language skills, improve vocabulary, and develop a lifelong love for books in a fun and interactive way.",
   },
   {
     id: 2,
     src: slider_2,
-    title: "12",
-    desc: "fghfhh2",
+    title: "Music & Dance",
+    desc: "Through music and dance, children learn rhythm, coordination, and self-expression. These joyful activities also help in emotional development and boost confidence in young learners.",
   },
 ];
 

@@ -22,9 +22,9 @@ const Forget_password = () => {
               <div>
                 <h3 className="text-3xl font-bold">Forgot Password</h3>
                 <p className="py-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facilis mollitia illum perspiciatis nisi expedita in deserunt
-                  rerum maxime qui aut nam laudantium molestias.
+                  Lost your password? Enter your registered email to receive a
+                  secure link to reset your account and continue your learning
+                  journey.
                 </p>
               </div>
               <div>
@@ -49,7 +49,7 @@ const Forget_password = () => {
               </div>
               <div>
                 <button className="bg-red-500 cursor-pointer py-3 w-full rounded-full text-white">
-                  Login Now
+                  Reset Password
                 </button>
               </div>
             </form>
